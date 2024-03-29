@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE INTERNET SACHA BOUKOUYA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <script>
+        var _hidediv = null;
+        function resetArrows() {
+            var arrows = document.querySelectorAll('.fa-solid.fa-arrow-down');
+            arrows.forEach(function(arrow) {
+                arrow.classList.remove('rotate-180');
+            });
+        }
+    
+        function showdiv(id, arrowId, linkId) {
+            if(_hidediv)
+                _hidediv();
+            var div = document.getElementById(id);
+            div.style.display = 'block';
+            _hidediv = function () { div.style.display = 'none'; };
+    
+            // Réinitialisation de tous les éléments <i>
+            resetArrows();
+    
+            // Rotation de 180 degrés pour l'élément <i> correspondant
+            var arrow = document.getElementById(arrowId);
+            arrow.classList.add('rotate-180');
+    
+            // Mise en gras du texte de l'élément <a>
+            var link = document.getElementById(linkId);
+    
+            // Supprimer la classe 'bold-text' de tous les liens
+            var allLinks = document.querySelectorAll('a');
+            allLinks.forEach(function(item) {
+                item.classList.remove('bold-text');
+            });
+    
+            // Ajouter la classe 'bold-text' au lien cliqué
+            link.classList.add('bold-text');
+        }
+    
+    
+    
+        </script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Sacha <span class="Nom">Boukouya</span></h1>
+        <div class="num"><i class="fa-solid fa-phone">&nbsp;&nbsp;</i>06 51 31 68 62</div>
+        <div class="mail"><i class="fa-solid fa-at"></i>&nbsp;&nbsp;sachaboukouya@gmail.com</div>
+        <div class="postale"><i class="fa-solid fa-house"></i>&nbsp;&nbsp; Seynod 74600 Annecy</div>
+    </div>
+
+
+<div class="presentation">
+<h1>Bonjour</h1>
+        <img class="photo" src="photo.jpg" alt="">
+        <div class="Accueil">Je m'appelle Sacha Boukouya, je suis étudiant en terminale générale au lycée Louis Lachenal à Argonay.
+            <br>Bienvenue sur mon site Internet !
+            <br>Ce site a été entièrement créé et façonné de mes mains.
+            <br>Au fil des pages, vous découvrirez mon parcours scolaire, mes compétences informatiques, mes loisirs ainsi que mon projet professionnel et mes travaux réalisés.
+            <br>Bonne lecture ! 
+        </div>
+
+</div>
+
+
+
+<div class="Sommaire">
+    <h1>Sommaire</h1>
+
+
+
+</div>
+    
+
+    <div class="sommaire">
+        <div class="btn">
+            <ol>
+                <li><a id="link1" class="ps" onclick="showdiv('1er', 'arrow1', 'link1'); " >Parcours scolaire</a></li>
+                <i id="arrow1" class="fa-solid fa-arrow-down"></i>
+                <li><a id="link2" class="ci" onclick="showdiv('2ieme', 'arrow2', 'link2'); " >Compétences informatiques</a></li>
+                <i id="arrow2" class="fa-solid fa-arrow-down"></i>
+                <li><a id="link3" class="l" onclick="showdiv('3ieme', 'arrow3', 'link3'); " >Loisirs</a></li>
+                <i id="arrow3" class="fa-solid fa-arrow-down"></i>
+                <li><a id="link4" class="lg" onclick="showdiv('4ieme', 'arrow4', 'link4'); " >Langues</a></li>
+                <i id="arrow4" class="fa-solid fa-arrow-down"></i>
+                <li><a id="link5" class="pp" onclick="showdiv('5ieme', 'arrow5', 'link5'); " >Objectif professionnel</a></li>
+                <i id="arrow5" class="fa-solid fa-arrow-down"></i>
+                <li><a id="link6" class="pp" onclick="showdiv('6ieme', 'arrow6', 'link6'); " >Projets réalisés</a></li>
+                <i id="arrow6" class="fa-solid fa-arrow-down"></i>
+            </ol>
+        </div>
+        <div class="barre"></div>
+        <div class="text">
+            <div id="1er" style="display: none;"><li><strong>Collège Jacques Prévert à Meythet</strong> de la 6ème à la 3ème. 
+                &nbsp;Avec obtention du Brevet des collèges avec la Mention Très Bien.
+                </li>
+                    <li><strong>Lycée Louis Lachenal à Argonay :</strong>
+                            <ol>1. Seconde Générale avec l'option SI (Sciences de l'ingénieur)</ol>
+                            <ol>2. Première Générale avec les Spécialitées Physique/Chimie, Mathématiques et N.S.I (Numérique et Sciences Informatiques) </ol>
+                            <ol>3. Terminale Générale en conservant les Spécialitées Mathématiques et N.S.I</ol>
+            </li></div>
+            <div id="2ieme" style="display: none;"><li><strong>Réseaux Sociaux :</strong>
+                <ol>Instagram, Twitter, Snapchat</ol>
+                <li><strong>Logiciels Informatiques / Programmation :</strong>
+            
+                        <ol>Microsoft Office (Word, Excel, Powerpoint)</ol>
+                            <ol>Visual Studio Code</ol>
+                            <ol>Spyder</ol>
+
+                            <li><strong>Langages informatiques que je sais utilisés :</strong></li>
+                <ol>Python (Algorithmie, Base de Données...)</ol>
+                <ol>HTML</ol>
+                <ol>CSS</ol>
+                <ol>JavaScript</ol>
+                </li></div>
+            <div id="3ieme" style="display: none;"> 
+                <li>Football</li>
+                <br>
+                <li>Cinéma</li>
+                <br>
+                <li>Informatique</li>
+                <br>
+                <li>Jeux Vidéos</li>
+                <br>
+                <li>Lecture</li></div>
+            <div id="4ieme" style="display: none;">
+                <li>Anglais Niveau B2</li>
+                <br>
+                <li>Espagnol Niveau B2</li>
+                <br>
+                <li>Portugais, Niveau A2 (langue maternelle)</li></div>
+            <div id="5ieme" style="display: none;">
+                <li><strong>Concepteur et Développeur d'Applications / Sites Web :</strong></li>
+                <br>
+                Je suis passionné d'informatique avec un attrait particulier pour la programmation Web.
+                <br>Je souhaite faire de ma passion mon métier. 
+                <br>Cette profession est, de mon point de vue, très innovante et en perpétuelle évolution.
+
+                
+            </div>
+            <div id="6ieme" style="display: none;">
+                <li><strong>Création de plusieurs jeux jouables sur une Table Pixel :</strong></li>
+                <ol><strong>1.</strong> "Jeu des Drapeaux" (Objectif : trouver le nom du drapeau s'affichant à l'écran) </ol>
+                <ol><strong>2.</strong> Jeu "Snake" créé à l'aide de py.game (Objectif : faire grandir le serpent en mangeant des pommes sans devenir son propre obstacle)</ol>
+                <li><strong>Création de mon propre Site Internet</strong></li>
+                <li><strong>Création de "Où est ETERIS ?"</strong>, un mini jeu sur une page web basé sur le model du célèbre jeu "Où est Charlie ?" ayant la spécificité d'avoir des décors générés aléatoirement par le biais d'une I.A. (conçue par notre groupe) intégrée sur le site.</li>
+                <div class="eteris">
+                <img src="ProjetEteris.png" alt="" width="275px">
+                <img src="décor3.png" alt="" width="220px">
+                <img src="décor4.png" alt="" width="220px">
+                <img src="décor2.png" alt="" width="220px">
+                <img src="décor1.webp" alt="" width="220px">
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

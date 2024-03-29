@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+
+
+
+.header{
+    font-family: "Raleway", sans-serif;
+    margin-left: 35%;
+    margin-top: 100px;
+    font-size: 32px;
+    align-items: center;
+        span.Nom{
+            font-style: italic;
+            font-weight: 500px;
+                
+        }
+                .num{
+                    margin-left:-150px ;
+                    font-size: 22px;
+                    margin-top: 70px;
+                }
+                    .mail{
+                        margin-left: 55px;
+                        margin-top: -26px;
+                        font-size: 22px;
+                    }
+                            .postale{
+                                margin-top: -26px;
+                                margin-left: 390px;
+                                font-size: 22px;
+                            }
+
+}
+
+body{
+        background-color: #EEE;
+        overflow: auto;
+
+}
+
+.presentation{
+    font-family: "Raleway", sans-serif;
+    margin-left: 220px;
+    font-size: 22px;
+            .photo{
+                width: 160px;
+                height: 180px;
+                margin-top: -80px;
+                margin-left: -70px;
+            }
+                
+                h1{
+                    margin-left: 140px;
+                    margin-top: 180px;
+                    font-style: italic;
+                }
+                        .Accueil{
+                            margin-left: 140px;
+                            margin-top: -110px;
+                            font-size: 18px;
+                    
+                        }
+
+}
+
+
+.Sommaire{
+    font-family: "Raleway", sans-serif;
+        font-style: italic;
+            font-size: 20px;
+            margin-top: 150px;
+            margin-left: 150px;
+}
+
+.merci{
+    font-family: "Raleway", sans-serif;
+        font-style: italic;
+            font-size: 20px;
+            margin-top: 700px;
+            margin-left: 135px;
+}
+
+
+
+.sommaire {
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    transition: all .5s;
+    margin-left: 100px;
+}
+.sommaire .btn {
+        text-decoration: none;
+        display: flex;
+}
+.sommaire a {
+        font-size: 1.2rem;
+        padding: 20px 30px;
+        margin: 10px 0;
+        z-index: 5;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .4s;
+        color: black;
+}
+.sommaire i {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+ol {
+    width: 390px;
+    list-style: none;
+}
+ol li {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    margin: 10px 0;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s;
+}
+.sommaire .text {
+    position: absolute;
+    width: 500px;
+    text-align: justify;
+    margin-top: -425px;
+    margin-left: 700px;
+    font-size: 16px;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.bold-text {
+    font-weight: 850;
+}
+.fa-solid.fa-arrow-down {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.barre {
+    width: 2px;
+    height: 385px;
+    background-color: black;
+    position: absolute;
+    margin-top: -410px;
+    margin-left: 680px;
+}
+
+.text ol, li{
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        margin-left: 10%;
+        margin-top: 50px;
+        font-size: 24px;
+    }
+    .body {
+        width: 50%;
+        overflow-x: hidden;
+    }
+    .btn {
+        width: 200px;
+        margin-left: -60px;
+    }
+    .btn i {
+        margin-left: 0px;
+    }
+
+    .presentation {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .Sommaire, .merci {
+        margin-left: 20px;
+    }
+    .sommaire {
+        width: 50%;
+    }
+}
